@@ -1,0 +1,115 @@
+.hero { padding: 64px 0 0; position: relative; }
+.hero-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 40px; align-items: center; }
+@media (max-width: 860px) { .hero-grid { grid-template-columns: 1fr; gap: 60px; } }
+.hero h1 { font-size: clamp(2.6rem, 5.6vw, 4.1rem); max-width: 14ch; }
+.hero h1 em { font-style: italic; font-weight: 400; }
+.hero .sub {
+  margin-top: 24px;
+  max-width: 42ch;
+  font-size: 1.12rem;
+  color: var(--stone);
+  font-weight: 500;
+}
+.free-sticker {
+  display: inline-block;
+  margin-top: 22px;
+  font-family: 'Caveat', cursive;
+  font-weight: 700;
+  font-size: 1.25rem;
+  background: var(--sun);
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  padding: 5px 18px;
+  transform: rotate(-2deg);
+}
+
+/* ---------- App home screen mockup ---------- */
+.app-header { padding: 6px 18px 14px; }
+.app-greeting { font-family: 'Fraunces', serif; font-weight: 500; font-size: 1.22rem; }
+.searchbox {
+  margin-top: 11px;
+  background: #fff;
+  border: 1.5px solid var(--hairline);
+  border-radius: 999px;
+  padding: 9px 15px;
+  color: var(--stone);
+  font-weight: 500;
+  box-shadow: 0 1px 3px rgba(20, 51, 42, 0.06);
+}
+.app-body { padding: 4px 13px 16px; }
+.app-section-title { font-weight: 700; font-size: 10.5px; color: var(--stone); margin: 8px 6px 9px; }
+.app-card {
+  background: #fff;
+  border: 1.5px solid var(--hairline);
+  border-radius: 19px;
+  padding: 13px 14px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(20, 51, 42, 0.05);
+}
+.app-card-top { display: flex; align-items: center; gap: 11px; }
+.doodle-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: var(--sun);
+  border: 1.5px solid var(--ink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.doodle-avatar.alt { background: var(--mint); }
+.doodle-avatar svg { width: 86%; height: 86%; }
+.app-card .name { font-weight: 700; font-size: 13px; }
+.app-card .meta { font-size: 11px; color: var(--stone); font-weight: 500; }
+.fat-leaves { display: flex; gap: 3px; margin-top: 9px; align-items: center; }
+.fat-leaves svg { width: 15px; height: 15px; }
+.fat-leaves span { font-size: 10.5px; font-weight: 600; color: var(--stone); margin-left: 6px; }
+.app-card .snippet { margin-top: 7px; font-size: 11.5px; font-weight: 500; color: var(--stone); }
+.send-ty {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 9px;
+  font-size: 10.5px;
+  font-weight: 700;
+  color: var(--ink);
+  background: var(--mist);
+  border: 1.5px solid var(--ink);
+  border-radius: 999px;
+  padding: 4px 11px;
+}
+.send-ty svg { width: 11px; height: 11px; }
+.tabbar {
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 8px 15px;
+  background: #fff;
+  border-top: 1.5px solid var(--hairline);
+  font-size: 9.5px;
+  font-weight: 700;
+  color: var(--stone);
+}
+.tabbar div { display: flex; flex-direction: column; align-items: center; gap: 3px; opacity: 0.55; }
+.tabbar div.active { opacity: 1; color: var(--ink); }
+.tabbar svg { width: 17px; height: 17px; }
+
+/* ---------- Manifesto ---------- */
+.manifesto {
+  margin-top: 90px;
+  background: var(--mist);
+  padding: 100px 0;
+  text-align: center;
+}
+.manifesto p {
+  font-family: 'Fraunces', serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: clamp(1.5rem, 3.4vw, 2.15rem);
+  line-height: 1.4;
+  max-width: 27ch;
+  margin: 0 auto;
+}
+.manifesto .leafline { margin-top: 26px; display: flex; justify-content: center; gap: 8px; }
+.manifesto .leafline svg { width: 20px; height: 20px; }

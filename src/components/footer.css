@@ -1,0 +1,23 @@
+footer {
+  background: var(--cream);
+  color: var(--stone);
+  padding: 0 0 40px;
+  font-weight: 500;
+  font-size: 0.86rem;
+}
+footer .wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  border-top: 1px solid var(--hairline);
+  padding-top: 26px;
+}
+.footer-legal {
+  border-top: none !important;
+  padding-top: 14px !important;
+  font-size: 0.8rem;
+  color: var(--stone);
+}
+.footer-legal a { color: var(--stone); text-decoration: underline; text-underline-offset: 3px; }
+.footer-legal a:hover { color: var(--ink); }

@@ -1,0 +1,59 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html {
+  background: #FBF7EF !important;
+  color-scheme: only light;
+  scroll-behavior: smooth;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: #FBF7EF;
+  z-index: -1;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+
+body {
+  min-height: 100vh;
+  background: #FBF7EF !important;
+  color: var(--ink);
+  font-family: 'Figtree', sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  font-family: 'Fraunces', serif;
+  font-weight: 500;
+  line-height: 1.12;
+  letter-spacing: -0.015em;
+}
+
+a { color: inherit; }
+
+a:focus-visible, button:focus-visible, input:focus-visible {
+  outline: 2.5px solid var(--mint-deep);
+  outline-offset: 3px;
+}
+
+/* ---------- Shared atoms / utilities ---------- */
+.wrap { max-width: 1000px; margin: 0 auto; padding: 0 26px; }
+.narrow { max-width: 640px; margin: 0 auto; padding: 0 26px; }
+.hand { font-family: 'Caveat', cursive; font-weight: 700; }
+.ty-mark { color: var(--coral); }
+.lead { color: var(--stone); font-weight: 500; }
+.cards-caption {
+  font-family: 'Caveat', cursive;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--stone);
+  transform: rotate(-1deg);
+}

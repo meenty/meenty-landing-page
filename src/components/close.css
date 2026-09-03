@@ -1,0 +1,29 @@
+.close {
+  background: var(--mint);
+  padding: 110px 0 100px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.close h2 { font-size: clamp(2.1rem, 5.5vw, 3.3rem); max-width: 18ch; margin: 0 auto; }
+.close .sub { margin: 22px auto 0; max-width: 46ch; font-weight: 500; color: #23473A; }
+.close .waitlist { margin: 42px auto 0; }
+.close .email-row { border-color: var(--ink); box-shadow: 0 10px 30px rgba(20, 51, 42, 0.12); }
+.close .waitlist-msg { color: #23473A; }
+.close .waitlist-msg.ok { color: var(--ink); }
+.close .store-note { margin-top: 32px; font-weight: 600; font-size: 0.88rem; color: #2c5748; }
+.close .hand-close {
+  margin-top: 8px;
+  font-family: 'Caveat', cursive;
+  font-weight: 700;
+  font-size: 1.4rem;
+  display: inline-block;
+  transform: rotate(-1.5deg);
+}
+.close-leaf { position: absolute; }
+.close-leaf svg { width: 100%; height: 100%; }
+.cl1 { width: 74px; height: 74px; left: 6%; top: 50px; transform: rotate(-18deg); }
+.cl2 { width: 46px; height: 46px; right: 9%; top: 110px; transform: rotate(22deg); }
+.cl3 { width: 56px; height: 56px; right: 16%; bottom: 46px; transform: rotate(-10deg); }
+.cl4 { width: 40px; height: 40px; left: 14%; bottom: 80px; transform: rotate(14deg); }
+@media (max-width: 760px) { .cl2, .cl4 { display: none; } }

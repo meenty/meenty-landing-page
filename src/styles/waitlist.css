@@ -1,0 +1,86 @@
+/* ---------- Waitlist form (shared by hero + close) ---------- */
+.waitlist { margin-top: 34px; max-width: 440px; }
+.email-row {
+  display: flex;
+  background: #fff;
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  padding: 5px;
+  box-shadow: 0 10px 30px rgba(20, 51, 42, 0.08);
+}
+.email-row input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  background: transparent;
+  padding: 11px 18px;
+  font-family: 'Figtree', sans-serif;
+  font-size: 0.98rem;
+  font-weight: 500;
+  color: var(--ink);
+}
+.email-row input::placeholder { color: var(--stone); }
+.email-row input:focus-visible { outline: none; }
+.email-row:focus-within {
+  box-shadow: 0 0 0 3px var(--mint), 0 10px 30px rgba(20, 51, 42, 0.08);
+}
+.email-row button {
+  border: none;
+  border-radius: 999px;
+  padding: 11px 24px;
+  background: var(--ink);
+  color: var(--cream);
+  cursor: pointer;
+  font-family: 'Figtree', sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: background 0.2s ease;
+}
+.email-row button:hover { background: #2a5244; }
+.role-toggle { display: flex; gap: 10px; margin-top: 14px; }
+.role-pill {
+  font-family: 'Figtree', sans-serif;
+  font-weight: 700;
+  font-size: 0.88rem;
+  padding: 8px 18px;
+  border-radius: 999px;
+  cursor: pointer;
+  border: 2px solid var(--ink);
+  background: transparent;
+  color: var(--ink);
+  transition: background 0.15s ease;
+}
+.role-pill:hover { background: var(--mist); }
+.role-pill[aria-pressed="true"] { background: var(--ink); color: var(--cream); }
+.role-pill[aria-pressed="true"]:hover { background: var(--ink); }
+.waitlist-msg {
+  margin-top: 12px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--stone);
+  min-height: 1.5em;
+}
+.waitlist-msg.ok { color: var(--mint-deep); }
+.most-both {
+  margin-top: 10px;
+  font-family: 'Caveat', cursive;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--stone);
+  display: inline-block;
+  transform: rotate(-1deg);
+}
+.share-field {
+  margin-top: 12px;
+  width: 100%;
+  border: none;
+  background: transparent;
+  border-bottom: 1.5px solid var(--hairline);
+  padding: 8px 2px;
+  font-family: 'Figtree', sans-serif;
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--ink);
+}
+.share-field::placeholder { color: var(--stone); }
+.share-field:focus-visible { outline: none; border-bottom-color: var(--mint-deep); }

@@ -1,0 +1,40 @@
+/* ---------- Shared phone mockup shell ---------- */
+.phone-col { display: flex; flex-direction: column; align-items: center; gap: 18px; position: relative; }
+.phone {
+  width: 296px;
+  background: #fff;
+  border: 2px solid var(--ink);
+  border-radius: 42px;
+  padding: 9px;
+  box-shadow: 0 3px 6px rgba(20, 51, 42, 0.06), 0 26px 60px rgba(20, 51, 42, 0.14);
+  transform: rotate(-1.2deg);
+}
+.screen {
+  background: var(--cream);
+  border-radius: 34px;
+  overflow: hidden;
+  font-size: 12.5px;
+  line-height: 1.5;
+}
+.statusbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 20px 4px;
+  font-weight: 700;
+  font-size: 10.5px;
+  color: var(--stone);
+}
+.phone-note {
+  position: absolute;
+  right: -4%;
+  top: -34px;
+  font-family: 'Caveat', cursive;
+  font-weight: 700;
+  font-size: 1.35rem;
+  transform: rotate(-4deg);
+  text-align: center;
+  line-height: 1.15;
+  color: var(--ink);
+}
+.phone-note svg { width: 46px; height: 36px; display: block; margin: 4px auto 0; }
+@media (max-width: 860px) { .phone-note { right: 6%; } }

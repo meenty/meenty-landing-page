@@ -1,0 +1,38 @@
+.loop { background: var(--mist); padding: 110px 0; }
+.loop-head { text-align: center; }
+.loop h2 { font-size: clamp(2rem, 4.6vw, 2.9rem); max-width: 20ch; margin: 0 auto; }
+.loop .lead { margin: 18px auto 0; max-width: 52ch; }
+.loop-grid {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  justify-items: center;
+}
+@media (max-width: 820px) { .loop-grid { grid-template-columns: 1fr; gap: 70px; } }
+.cycle { width: min(360px, 88vw); }
+.cycle text { font-family: 'Figtree', sans-serif; font-weight: 700; fill: var(--ink); }
+.done-screen { text-align: center; padding: 26px 18px 20px; }
+.done-leaf { width: 62px; height: 62px; margin: 8px auto 0; }
+.done-title { font-family: 'Fraunces', serif; font-weight: 500; font-size: 1.3rem; margin-top: 12px; }
+.done-meta { margin-top: 7px; font-size: 11px; font-weight: 600; color: var(--stone); }
+.done-buttons { margin-top: 18px; display: flex; flex-direction: column; gap: 9px; }
+.done-btn {
+  border-radius: 999px;
+  padding: 12px 14px;
+  font-family: 'Figtree', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+}
+.done-btn.primary { background: var(--ink); color: var(--cream); border: 2px solid var(--ink); }
+.done-btn.ghost { background: transparent; color: var(--ink); border: 2px solid var(--ink); }
+.done-note {
+  margin-top: 14px;
+  font-family: 'Caveat', cursive;
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--stone);
+  transform: rotate(-1.5deg);
+  display: inline-block;
+}
