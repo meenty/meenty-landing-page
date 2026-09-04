@@ -23,6 +23,7 @@ export function setupWaitlist(root) {
     pill.addEventListener('click', () => {
       pills.forEach((p) => p.setAttribute('aria-pressed', 'false'))
       pill.setAttribute('aria-pressed', 'true')
+      track('Role Toggled', { props: { role: pill.textContent } })
     })
   })
 
@@ -50,6 +51,9 @@ export function setupWaitlist(root) {
     if (shareEl) shareEl.value = ''
   }
 
-  btn.addEventListener('click', submit)
+  btn.addEventListener('click', () => {
+    track('CTA Clicked', { props: { cta: 'save-spot' } })
+    submit()
+  })
   input.addEventListener('keydown', (e) => { if (e.key === 'Enter') submit() })
 }

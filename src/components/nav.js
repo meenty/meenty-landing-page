@@ -1,4 +1,5 @@
 import './nav.css'
+import { track } from '@plausible-analytics/tracker'
 
 export function render() {
   return `
@@ -14,4 +15,11 @@ export function render() {
       <a class="nav-cta" href="#join">Join the waitlist</a>
     </nav>
   </div>`
+}
+
+export function mount() {
+  const cta = document.querySelector('.nav-cta')
+  if (cta) cta.addEventListener('click', () => {
+    track('CTA Clicked', { props: { cta: 'nav' } })
+  })
 }
