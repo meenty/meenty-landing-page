@@ -1,3 +1,5 @@
+import { track } from '@plausible-analytics/tracker'
+
 export function waitlistHTML() {
   return `
     <div class="waitlist">
@@ -40,6 +42,7 @@ export function setupWaitlist(root) {
     const role = root.querySelector('.role-pill[aria-pressed="true"]').textContent
     const shareEl = root.querySelector('.share-field')
     const share = shareEl ? shareEl.value.trim() : ''
+    track('Waitlist Joined', { props: { role } })
     // TODO: send { email, role, share } to your backend or form service here
     msg.textContent = "You're on the list. One email when we open -- ty for being early."
     msg.classList.add('ok')
