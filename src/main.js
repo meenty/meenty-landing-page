@@ -1,6 +1,13 @@
 import './styles/tokens.css'
 import './styles/base.css'
 
+import { init as initPlausible } from '@plausible-analytics/tracker'
+
+initPlausible({
+  domain: 'meenty.app',
+  endpoint: 'https://plausible.mansus.org/api/event'
+})
+
 import { render as nav } from './components/nav.js'
 import { render as hero, mount as mountHero } from './components/hero.js'
 import { render as how } from './components/how.js'
