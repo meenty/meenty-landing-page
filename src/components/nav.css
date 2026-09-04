@@ -10,14 +10,3 @@ nav { display: flex; align-items: center; justify-content: space-between; paddin
   gap: 9px;
 }
 .logo svg { width: 24px; height: 24px; }
-.nav-cta {
-  font-weight: 700;
-  font-size: 0.93rem;
-  text-decoration: none;
-  background: var(--ink);
-  color: var(--cream);
-  border-radius: 999px;
-  padding: 11px 22px;
-  transition: background 0.2s ease;
-}
-.nav-cta:hover { background: #2a5244; }

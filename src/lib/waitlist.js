@@ -12,7 +12,6 @@ export function waitlistHTML() {
         <button type="button" class="role-pill" aria-pressed="false">I want to teach</button>
       </div>
       <span class="most-both">most people end up doing both</span>
-      <input type="text" class="share-field" placeholder="optional: what could you share? (anything counts)" aria-label="What could you share? Optional">
       <p class="waitlist-msg" aria-live="polite"></p>
     </div>`
 }
@@ -41,14 +40,11 @@ export function setupWaitlist(root) {
       return
     }
     const role = root.querySelector('.role-pill[aria-pressed="true"]').textContent
-    const shareEl = root.querySelector('.share-field')
-    const share = shareEl ? shareEl.value.trim() : ''
     track('Waitlist Joined', { props: { role } })
-    // TODO: send { email, role, share } to your backend or form service here
+    // TODO: send { email, role } to your backend or form service here
     msg.textContent = "You're on the list. One email when we open -- ty for being early."
     msg.classList.add('ok')
     input.value = ''
-    if (shareEl) shareEl.value = ''
   }
 
   btn.addEventListener('click', () => {

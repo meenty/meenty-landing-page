@@ -1,0 +1,60 @@
+.message { padding: 110px 0 90px; }
+.message h2 { font-size: clamp(1.9rem, 4.2vw, 2.7rem); text-align: center; }
+.message .sub {
+  margin: 18px auto 0;
+  max-width: 44ch;
+  color: var(--stone);
+  font-weight: 500;
+  text-align: center;
+}
+.message-card {
+  max-width: 520px;
+  margin: 34px auto 0;
+  background: #fff;
+  border: 2px solid var(--ink);
+  border-radius: 22px;
+  padding: 10px;
+  box-shadow: 0 10px 30px rgba(20, 51, 42, 0.08);
+}
+.message-card:focus-within {
+  box-shadow: 0 0 0 3px var(--mint), 0 10px 30px rgba(20, 51, 42, 0.08);
+}
+.message-field {
+  width: 100%;
+  display: block;
+  border: none;
+  background: transparent;
+  resize: vertical;
+  padding: 14px 16px;
+  font-family: 'Figtree', sans-serif;
+  font-size: 0.98rem;
+  font-weight: 500;
+  color: var(--ink);
+}
+.message-field::placeholder { color: var(--stone); }
+.message-field:focus-visible { outline: none; }
+.send-btn {
+  display: block;
+  width: 100%;
+  border: none;
+  border-radius: 14px;
+  padding: 12px 24px;
+  margin-top: 6px;
+  background: var(--ink);
+  color: var(--cream);
+  cursor: pointer;
+  font-family: 'Figtree', sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: background 0.2s ease;
+}
+.send-btn:hover { background: #2a5244; }
+.message-msg {
+  margin-top: 14px;
+  text-align: center;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--stone);
+  min-height: 1.5em;
+}
+.message-msg.ok { color: var(--mint-deep); }

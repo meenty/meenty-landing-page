@@ -70,17 +70,3 @@
   display: inline-block;
   transform: rotate(-1deg);
 }
-.share-field {
-  margin-top: 12px;
-  width: 100%;
-  border: none;
-  background: transparent;
-  border-bottom: 1.5px solid var(--hairline);
-  padding: 8px 2px;
-  font-family: 'Figtree', sans-serif;
-  font-size: 0.92rem;
-  font-weight: 500;
-  color: var(--ink);
-}
-.share-field::placeholder { color: var(--stone); }
-.share-field:focus-visible { outline: none; border-bottom-color: var(--mint-deep); }

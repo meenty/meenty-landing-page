@@ -48,7 +48,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 .wrap { max-width: 1000px; margin: 0 auto; padding: 0 26px; }
 .narrow { max-width: 640px; margin: 0 auto; padding: 0 26px; }
 .hand { font-family: 'Caveat', cursive; font-weight: 700; }
-.ty-mark { color: var(--coral); }
+.ty-mark { color: var(--mint-deep); }
 .lead { color: var(--stone); font-weight: 500; }
 .cards-caption {
   font-family: 'Caveat', cursive;
