@@ -21,8 +21,7 @@ ENV NEXT_TELEMETRY_DISABLED=1
 RUN addgroup --system --gid 1001 nodejs \
   && adduser --system --uid 1001 nextjs
 
-COPY --from=builder /app/public ./public
-
+# Writable dir for the Next.js prerender/ISR cache
 RUN mkdir .next \
   && chown nextjs:nodejs .next
 
