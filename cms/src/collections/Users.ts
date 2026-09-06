@@ -6,6 +6,12 @@ export const Users: CollectionConfig = {
     useAsTitle: 'email',
   },
   auth: true,
+  access: {
+    create: async ({ req }) => {
+      const { totalDocs } = await req.payload.count({ collection: 'users' })
+      return totalDocs === 0
+    },
+  },
   fields: [
     {
       name: 'name',
