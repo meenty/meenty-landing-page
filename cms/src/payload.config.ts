@@ -32,6 +32,7 @@ export default buildConfig({
     pool: {
       connectionString: process.env.DATABASE_URI || '',
     },
+    push: true,
   }),
   cors: [
     process.env.FRONTEND_URL || 'https://meenty.app',
