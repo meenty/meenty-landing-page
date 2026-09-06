@@ -10,6 +10,7 @@ import { Users } from './collections/Users'
 import { Waitlist } from './collections/Waitlist'
 import { Messages } from './collections/Messages'
 import { SiteContent } from './globals/SiteContent'
+import { up as initialUp, down as initialDown } from './migrations/20260906_174814'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
@@ -33,6 +34,13 @@ export default buildConfig({
       connectionString: process.env.DATABASE_URI || '',
     },
     push: true,
+    prodMigrations: [
+      {
+        name: '20260906_174814',
+        up: initialUp,
+        down: initialDown,
+      },
+    ],
   }),
   cors: [
     process.env.FRONTEND_URL || 'https://meenty.app',
