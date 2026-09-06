@@ -14,7 +14,7 @@ permissions:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: nemoNoboru/meenty-cms
+  IMAGE_NAME: nemonoboru/meenty-cms
 
 jobs:
   build:
