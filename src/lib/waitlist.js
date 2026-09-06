@@ -1,4 +1,5 @@
 import { track } from '@plausible-analytics/tracker'
+import { postToCms } from './api.js'
 
 export function waitlistHTML() {
   return `
@@ -30,7 +31,7 @@ export function setupWaitlist(root) {
   const btn = root.querySelector('.join-btn')
   const msg = root.querySelector('.waitlist-msg')
 
-  function submit() {
+  async function submit() {
     const email = input.value.trim()
     const valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
     if (!valid) {
@@ -41,10 +42,18 @@ export function setupWaitlist(root) {
     }
     const role = root.querySelector('.role-pill[aria-pressed="true"]').textContent
     track('Waitlist Joined', { props: { role } })
-    // TODO: send { email, role } to your backend or form service here
-    msg.textContent = "You're on the list. One email when we open -- ty for being early."
-    msg.classList.add('ok')
-    input.value = ''
+    btn.disabled = true
+    try {
+      await postToCms('/api/waitlist', { email, role })
+      msg.textContent = "You're on the list. One email when we open -- ty for being early."
+      msg.classList.add('ok')
+      input.value = ''
+    } catch (e) {
+      msg.textContent = "Couldn't save that -- mind trying again?"
+      msg.classList.remove('ok')
+    } finally {
+      btn.disabled = false
+    }
   }
 
   btn.addEventListener('click', () => {

@@ -2,6 +2,7 @@ import './match.css'
 import '../styles/phone.css'
 import { leaf } from '../lib/leaf.js'
 import { avatarFelipe } from '../lib/avatars.js'
+import content from '../content.json'
 
 export function render() {
   return `
@@ -38,8 +39,8 @@ export function render() {
         </div>
       </div>
       <div>
-        <h2>You pick. They accept. Then it's just the two of you.</h2>
-        <p class="lead">When a volunteer says yes, a chat opens -- and everything happens right there. Messages, video calls, that Thursday you keep. And when they help you grow, you send them a ty. It's the only currency in Meenty, and it can't be bought.</p>
+        <h2>${content?.match?.heading || ''}</h2>
+        <p class="lead">${content?.match?.lead || ''}</p>
       </div>
     </div>
   </section>`

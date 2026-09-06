@@ -1,29 +1,28 @@
 import './rules.css'
 import { leaf } from '../lib/leaf.js'
+import content from '../content.json'
 
 export function render() {
+  const rules = content?.rules || {}
+  const items = rules.items || []
+  const itemsHTML = items
+    .map((r, i) => {
+      const fill = i % 2 === 1 ? '#FFD84D' : '#6FE0B5'
+      return `
+        <div class="rule">
+          <strong>${leaf(fill)}${r.title || ''}</strong>
+          <p>${r.body || ''}</p>
+        </div>`
+    })
+    .join('')
+
   return `
   <section class="rules">
     <div class="narrow">
-      <h2>Before writing any code, we wrote four rules in a notebook.</h2>
-      <span class="hand hand-note">-- page one, verbatim</span>
+      <h2>${rules.heading || ''}</h2>
+      <span class="hand hand-note">${rules.note || ''}</span>
       <div class="rule-list">
-        <div class="rule">
-          <strong>${leaf()}Nurture</strong>
-          <p>Teaching is watering something in another person. Everything else we build is decoration around that.</p>
-        </div>
-        <div class="rule">
-          <strong>${leaf('#FFD84D')}Stay human</strong>
-          <p>No feeds, no streaks, no tricks to keep you scrolling. The app's whole job is to get out of the way of two people talking.</p>
-        </div>
-        <div class="rule">
-          <strong>${leaf()}No catch</strong>
-          <p>Free means free. No premium tier, no ads, no "unlock more mentors." Donations keep the servers on, and we publish where every cent goes.</p>
-        </div>
-        <div class="rule">
-          <strong>${leaf('#FFD84D')}Pass it on</strong>
-          <p>Knowledge doesn't belong to anyone. This one turned out to be the whole architecture -- every learner is next season's mentor, which is the only way a free garden keeps growing.</p>
-        </div>
+        ${itemsHTML}
       </div>
     </div>
   </section>`

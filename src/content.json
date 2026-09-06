@@ -1,0 +1,100 @@
+{
+  "hero": {
+    "headline": "Learn it from someone who loves it.",
+    "headlineEm": "loves",
+    "subtitle": "Meenty introduces you to volunteers who teach what they know -- writing, jazz, bread, code -- because they love it. No courses, no fees. And when you've grown, you teach the next person. That's the whole idea.",
+    "freeSticker": "free -- actually free, not \"free trial\" free",
+    "manifesto": "Everyone knows something worth passing on. Most of us were just never asked."
+  },
+  "how": {
+    "heading": "How it works",
+    "note": "-- honestly, this is all of it",
+    "steps": [
+      {
+        "title": "Say it in your own words",
+        "body": "\"I want to write better.\" \"Help me understand jazz.\" \"My plants keep dying.\" That's the whole search -- no categories to browse, no forms to fill."
+      },
+      {
+        "title": "Meet people who've offered to help",
+        "body": "We introduce you to a few volunteers who know the subject and chose to be here. You pick who to write to; they decide if it's a match. Nobody owes anybody anything."
+      },
+      {
+        "title": "Then it's just a conversation",
+        "body": "Chat and video calls, inside Meenty. Ask when you're stuck. Take an afternoon or take a year. When you've grown, you close the loop and send them a ty."
+      },
+      {
+        "title": "Then you pass it on",
+        "body": "Your goal sentence becomes your first teaching profile. One sprout given for the one you received -- that's how there's always someone to learn from."
+      }
+    ]
+  },
+  "people": {
+    "heading": "You don't need 15 years. One sprout ahead is enough.",
+    "lead": "Some volunteers are lifelong experts. Many just finished learning the thing themselves -- and nobody remembers the blank page better than someone who stared at it last month. Instead of star ratings, mentors collect tys: thank-yous from learners that grow leaves on their page.",
+    "note": "that's why it's called meenty, btw",
+    "caption": "example profiles -- meenty opens soon, and one of these could be you",
+    "profiles": [
+      {
+        "kind": "mentor",
+        "name": "Felipe Vieira",
+        "meta": "Writing",
+        "badge": "certified nice person",
+        "bio": "Fifteen years as an editor. Nothing makes me happier than watching someone stop being afraid of their own first draft.",
+        "leaves": 5,
+        "tys": "34 tys from learners",
+        "quote": "I showed up with a novel I'd been 'about to start' for six years. Three conversations later, I had a first chapter.",
+        "quoteFrom": "a ty from Ana"
+      },
+      {
+        "kind": "grad",
+        "name": "Ana Duarte",
+        "meta": "First chapters",
+        "badge": "one sprout ahead",
+        "bio": "I finished my first chapter here in March. If you're staring at a blank page, I know exactly how that feels -- and I'll show you what got me unstuck.",
+        "learned": "writing",
+        "now": "now teaching it"
+      }
+    ]
+  },
+  "rules": {
+    "heading": "Before writing any code, we wrote four rules in a notebook.",
+    "note": "-- page one, verbatim",
+    "items": [
+      {
+        "title": "Nurture",
+        "body": "Teaching is watering something in another person. Everything else we build is decoration around that."
+      },
+      {
+        "title": "Stay human",
+        "body": "No feeds, no streaks, no tricks to keep you scrolling. The app's whole job is to get out of the way of two people talking."
+      },
+      {
+        "title": "No catch",
+        "body": "Free means free. No premium tier, no ads, no \"unlock more mentors.\" Donations keep the servers on, and we publish where every cent goes."
+      },
+      {
+        "title": "Pass it on",
+        "body": "Knowledge doesn't belong to anyone. This one turned out to be the whole architecture -- every learner is next season's mentor, which is the only way a free garden keeps growing."
+      }
+    ]
+  },
+  "message": {
+    "heading": "Send us a message",
+    "sub": "Questions, ideas, something you'd love to teach -- we read everything.",
+    "placeholder": "write to us..."
+  },
+  "close": {
+    "heading": "Come for what you want to learn. Stay for what you'll teach.",
+    "sub": "Meenty opens with whoever joins first -- that's you. Leave your email and we'll write once, when the doors open. Until then, we'll be busy planting.",
+    "note": "ty in advance 🌿",
+    "storeNote": "Growing soon on iOS & Android"
+  },
+  "match": {
+    "heading": "You pick. They accept. Then it's just the two of you.",
+    "lead": "When a volunteer says yes, a chat opens -- and everything happens right there. Messages, video calls, that Thursday you keep. And when they help you grow, you send them a ty. It's the only currency in Meenty, and it can't be bought."
+  },
+  "loop": {
+    "heading": "Pass it on: the part that makes the garden grow.",
+    "lead": "Meenty isn't a marketplace with mentors on one side and learners on the other. It's a cycle you join. You arrive with a goal, and you leave it as someone worth learning from -- one sprout ahead of whoever comes next."
+  }
+}

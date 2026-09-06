@@ -35,3 +35,17 @@ export function avatarAna() {
     <circle cx="31.5" cy="30" r="1.8" fill="#F5C9B5"/>
   </svg>`
 }
+
+export function initialsAvatar(name, fill = '#6FE0B5') {
+  const initials = (name || '')
+    .split(/\s+/)
+    .map((w) => w[0])
+    .filter(Boolean)
+    .slice(0, 2)
+    .join('')
+    .toUpperCase()
+  return `<svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+    <circle cx="24" cy="24" r="23" fill="${fill}" stroke="#14332A" stroke-width="2.5"/>
+    <text x="24" y="29" text-anchor="middle" font-size="16" font-family="Figtree, sans-serif" font-weight="700" fill="#14332A">${initials}</text>
+  </svg>`
+}

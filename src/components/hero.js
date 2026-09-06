@@ -4,15 +4,22 @@ import '../styles/waitlist.css'
 import { leaf } from '../lib/leaf.js'
 import { avatarFelipe, avatarMauricio } from '../lib/avatars.js'
 import { waitlistHTML, setupWaitlist } from '../lib/waitlist.js'
+import content from '../content.json'
+
+function headline() {
+  const h = content?.hero?.headline || ''
+  const em = content?.hero?.headlineEm
+  return em ? h.replace(em, `<em>${em}</em>`) : h
+}
 
 export function render() {
   return `
   <header class="hero">
     <div class="wrap hero-grid">
       <div>
-        <h1>Learn it from someone who <em>loves</em> it.</h1>
-        <p class="sub">Meenty introduces you to volunteers who teach what they know -- writing, jazz, bread, code -- because they love it. No courses, no fees. And when you've grown, you teach the next person. That's the whole idea.</p>
-        <span class="free-sticker">free -- actually free, not "free trial" free</span>
+        <h1>${headline()}</h1>
+        <p class="sub">${content?.hero?.subtitle || ''}</p>
+        <span class="free-sticker">${content?.hero?.freeSticker || ''}</span>
 
         ${waitlistHTML()}
       </div>
@@ -89,7 +96,7 @@ export function render() {
 
     <div class="manifesto">
       <div class="narrow">
-        <p>Everyone knows something worth passing on. Most of us were just never asked.</p>
+        <p>${content?.hero?.manifesto || ''}</p>
         <div class="leafline" aria-hidden="true">
           ${leaf()}${leaf('#FFD84D')}${leaf()}
         </div>

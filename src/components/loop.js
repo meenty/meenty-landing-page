@@ -1,13 +1,14 @@
 import './loop.css'
 import '../styles/phone.css'
+import content from '../content.json'
 
 export function render() {
   return `
   <section class="loop">
     <div class="wrap">
       <div class="loop-head">
-        <h2>Pass it on: the part that makes the garden grow.</h2>
-        <p class="lead">Meenty isn't a marketplace with mentors on one side and learners on the other. It's a cycle you join. You arrive with a goal, and you leave it as someone worth learning from -- one sprout ahead of whoever comes next.</p>
+        <h2>${content?.loop?.heading || ''}</h2>
+        <p class="lead">${content?.loop?.lead || ''}</p>
       </div>
       <div class="loop-grid">
         <svg class="cycle" viewBox="0 0 340 340" role="img" aria-label="The Meenty cycle: a goal leads to conversations, then a ty, then you're on the other side, and it begins again">
