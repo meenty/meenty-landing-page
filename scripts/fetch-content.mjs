@@ -1,3 +1,7 @@
+// NOTE: disabled — removed from the `build` script in package.json pending
+// CMS schema parity. The live CMS still serves the legacy schema (no
+// mission/vision/values/about keys), so re-enabling this fetch would wipe the
+// hardcoded section content. Keep this file for when the CMS catches up.
 import { writeFileSync, existsSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import path from 'node:path'
