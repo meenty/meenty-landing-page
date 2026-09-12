@@ -16,7 +16,7 @@ import { render as people } from './components/people.js'
 import { render as match } from './components/match.js'
 import { render as loop } from './components/loop.js'
 import { render as values } from './components/values.js'
-import { render as about } from './components/about.js'
+import { render as aboutTeaser } from './components/about-teaser.js'
 import { render as close, mount as mountClose } from './components/close.js'
 import { render as message, mount as mountMessage } from './components/message.js'
 import { render as footer } from './components/footer.js'
@@ -31,7 +31,7 @@ function mount(html) {
   app.append(template.content)
 }
 
-const sections = [nav, hero, mission, how, people, match, loop, values, about, close, message, footer]
+const sections = [nav, hero, mission, how, people, match, loop, values, aboutTeaser, close, message, footer]
 
 sections.forEach((render) => mount(render()))
 
