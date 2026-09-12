@@ -8,7 +8,7 @@ A Vite (vanilla JS) static site, componentized into ES modules + scoped CSS.
 
 ```bash
 npm install
-npm run dev      # http://localhost:5173
+npm run dev      # http://localhost:8000
 ```
 
 ## Build
