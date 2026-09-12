@@ -12,6 +12,7 @@ import { Messages } from './collections/Messages'
 import { SiteContent } from './globals/SiteContent'
 import { up as initialUp, down as initialDown } from './migrations/20260906_174814'
 import { up as valuesUp, down as valuesDown } from './migrations/20260912_103500'
+import { up as aboutUp, down as aboutDown } from './migrations/20260912_110000'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
@@ -45,6 +46,11 @@ export default buildConfig({
         name: '20260912_103500',
         up: valuesUp,
         down: valuesDown,
+      },
+      {
+        name: '20260912_110000',
+        up: aboutUp,
+        down: aboutDown,
       },
     ],
   }),

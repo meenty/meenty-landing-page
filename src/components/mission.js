@@ -6,7 +6,7 @@ export function render() {
   const vision = content?.vision || {}
 
   return `
-  <section class="mission-vision" id="about">
+  <section class="mission-vision" id="mission">
     <div class="wrap">
       <div class="mv-grid">
         <article class="mv-block">

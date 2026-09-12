@@ -122,6 +122,32 @@ export const SiteContent: GlobalConfig = {
     },
     {
       type: 'group',
+      name: 'about',
+      label: 'About / Our story',
+      fields: [
+        { name: 'label', type: 'text' },
+        { name: 'heading', type: 'text', required: true },
+        {
+          name: 'blocks',
+          type: 'array',
+          required: true,
+          fields: [
+            {
+              name: 'kind',
+              type: 'select',
+              options: [
+                { label: 'Paragraph', value: 'text' },
+                { label: 'Highlight', value: 'highlight' },
+              ],
+              defaultValue: 'text',
+            },
+            { name: 'body', type: 'textarea', required: true },
+          ],
+        },
+      ],
+    },
+    {
+      type: 'group',
       name: 'message',
       label: 'Message section',
       fields: [
