@@ -10,11 +10,12 @@ initPlausible({
 
 import { render as nav } from './components/nav.js'
 import { render as hero, mount as mountHero } from './components/hero.js'
+import { render as mission } from './components/mission.js'
 import { render as how } from './components/how.js'
 import { render as people } from './components/people.js'
 import { render as match } from './components/match.js'
 import { render as loop } from './components/loop.js'
-import { render as rules } from './components/rules.js'
+import { render as values } from './components/values.js'
 import { render as close, mount as mountClose } from './components/close.js'
 import { render as message, mount as mountMessage } from './components/message.js'
 import { render as footer } from './components/footer.js'
@@ -29,7 +30,7 @@ function mount(html) {
   app.append(template.content)
 }
 
-const sections = [nav, hero, how, people, match, loop, rules, close, message, footer]
+const sections = [nav, hero, mission, how, people, match, loop, values, close, message, footer]
 
 sections.forEach((render) => mount(render()))
 

@@ -32,6 +32,24 @@ export const SiteContent: GlobalConfig = {
     },
     {
       type: 'group',
+      name: 'mission',
+      label: 'Mission',
+      fields: [
+        { name: 'heading', type: 'text', required: true },
+        { name: 'body', type: 'textarea', required: true },
+      ],
+    },
+    {
+      type: 'group',
+      name: 'vision',
+      label: 'Vision',
+      fields: [
+        { name: 'heading', type: 'text', required: true },
+        { name: 'body', type: 'textarea', required: true },
+      ],
+    },
+    {
+      type: 'group',
       name: 'how',
       label: 'How it works',
       fields: [
@@ -86,8 +104,8 @@ export const SiteContent: GlobalConfig = {
     },
     {
       type: 'group',
-      name: 'rules',
-      label: 'Rules',
+      name: 'values',
+      label: 'Values',
       fields: [
         { name: 'heading', type: 'text', required: true },
         { name: 'note', type: 'text' },

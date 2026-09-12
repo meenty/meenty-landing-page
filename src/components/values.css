@@ -1,6 +1,6 @@
-.rules { padding: 110px 0; }
-.rules h2 { font-size: clamp(1.9rem, 4.2vw, 2.7rem); max-width: 22ch; }
-.rules .hand-note {
+.values { padding: 110px 0; }
+.values h2 { font-size: clamp(1.9rem, 4.2vw, 2.7rem); max-width: 22ch; }
+.values .hand-note {
   margin-top: 14px;
   font-family: 'Caveat', cursive;
   font-weight: 700;
@@ -9,8 +9,8 @@
   transform: rotate(-1deg);
   display: inline-block;
 }
-.rule-list { margin-top: 44px; }
-.rule {
+.value-list { margin-top: 44px; }
+.value {
   display: grid;
   grid-template-columns: 200px 1fr;
   gap: 24px;
@@ -18,9 +18,9 @@
   border-bottom: 1px solid var(--hairline);
   align-items: baseline;
 }
-.rule:first-child { border-top: 1px solid var(--hairline); }
-@media (max-width: 640px) { .rule { grid-template-columns: 1fr; gap: 6px; } }
-.rule strong {
+.value:first-child { border-top: 1px solid var(--hairline); }
+@media (max-width: 640px) { .value { grid-template-columns: 1fr; gap: 6px; } }
+.value strong {
   font-family: 'Fraunces', serif;
   font-weight: 500;
   font-size: 1.35rem;
@@ -28,5 +28,5 @@
   align-items: center;
   gap: 10px;
 }
-.rule strong svg { width: 19px; height: 19px; flex-shrink: 0; }
-.rule p { color: var(--stone); font-weight: 500; max-width: 52ch; }
+.value strong svg { width: 19px; height: 19px; flex-shrink: 0; }
+.value p { color: var(--stone); font-weight: 500; max-width: 52ch; }

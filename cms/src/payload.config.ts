@@ -11,6 +11,7 @@ import { Waitlist } from './collections/Waitlist'
 import { Messages } from './collections/Messages'
 import { SiteContent } from './globals/SiteContent'
 import { up as initialUp, down as initialDown } from './migrations/20260906_174814'
+import { up as valuesUp, down as valuesDown } from './migrations/20260912_103500'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
@@ -39,6 +40,11 @@ export default buildConfig({
         name: '20260906_174814',
         up: initialUp,
         down: initialDown,
+      },
+      {
+        name: '20260912_103500',
+        up: valuesUp,
+        down: valuesDown,
       },
     ],
   }),

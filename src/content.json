@@ -1,4 +1,5 @@
 {
+  "id": 1,
   "hero": {
     "headline": "Learn it from someone who loves it.",
     "headlineEm": "loves",
@@ -6,23 +7,35 @@
     "freeSticker": "free -- actually free, not \"free trial\" free",
     "manifesto": "Everyone knows something worth passing on. Most of us were just never asked."
   },
+  "mission": {
+    "heading": "to help people learn, share and grow together.",
+    "body": "We connect people who want to learn with people who are willing to share what they know, creating meaningful connections where everyone has something to give and something to discover."
+  },
+  "vision": {
+    "heading": "a world where everyone can learn from anyone.",
+    "body": "We want to make knowledge more open and human, giving people the chance to discover and connect with others far beyond their usual circles, regardless of where they come from, what they do, who they know or what they have. A world where everyone has access to people who can help them grow, and where everyone can feel that what they know and who they are can make a difference to someone else."
+  },
   "how": {
     "heading": "How it works",
     "note": "-- honestly, this is all of it",
     "steps": [
       {
+        "id": "6a9da99ea25bbb00016712db",
         "title": "Say it in your own words",
         "body": "\"I want to write better.\" \"Help me understand jazz.\" \"My plants keep dying.\" That's the whole search -- no categories to browse, no forms to fill."
       },
       {
+        "id": "6a9da99ea25bbb00016712dc",
         "title": "Meet people who've offered to help",
         "body": "We introduce you to a few volunteers who know the subject and chose to be here. You pick who to write to; they decide if it's a match. Nobody owes anybody anything."
       },
       {
+        "id": "6a9da99ea25bbb00016712dd",
         "title": "Then it's just a conversation",
         "body": "Chat and video calls, inside Meenty. Ask when you're stuck. Take an afternoon or take a year. When you've grown, you close the loop and send them a ty."
       },
       {
+        "id": "6a9da99ea25bbb00016712de",
         "title": "Then you pass it on",
         "body": "Your goal sentence becomes your first teaching profile. One sprout given for the one you received -- that's how there's always someone to learn from."
       }
@@ -35,6 +48,7 @@
     "caption": "example profiles -- meenty opens soon, and one of these could be you",
     "profiles": [
       {
+        "id": "6a9da99ea25bbb00016712df",
         "kind": "mentor",
         "name": "Felipe Vieira",
         "meta": "Writing",
@@ -43,38 +57,45 @@
         "leaves": 5,
         "tys": "34 tys from learners",
         "quote": "I showed up with a novel I'd been 'about to start' for six years. Three conversations later, I had a first chapter.",
-        "quoteFrom": "a ty from Ana"
+        "quoteFrom": "a ty from Ana",
+        "learned": null,
+        "now": null
       },
       {
+        "id": "6a9da99ea25bbb00016712e0",
         "kind": "grad",
         "name": "Ana Duarte",
         "meta": "First chapters",
         "badge": "one sprout ahead",
         "bio": "I finished my first chapter here in March. If you're staring at a blank page, I know exactly how that feels -- and I'll show you what got me unstuck.",
+        "leaves": 5,
+        "tys": null,
+        "quote": null,
+        "quoteFrom": null,
         "learned": "writing",
         "now": "now teaching it"
       }
     ]
   },
-  "rules": {
-    "heading": "Before writing any code, we wrote four rules in a notebook.",
-    "note": "-- page one, verbatim",
+  "values": {
+    "heading": "Our values",
+    "note": "-- four things we keep coming back to",
     "items": [
       {
-        "title": "Nurture",
-        "body": "Teaching is watering something in another person. Everything else we build is decoration around that."
+        "title": "first step > perfect plan",
+        "body": "We don't need to have it all figured out before we start. We try, we learn, we adjust, and we keep moving. Sometimes the best way to find the way is simply to take the first step."
       },
       {
-        "title": "Stay human",
-        "body": "No feeds, no streaks, no tricks to keep you scrolling. The app's whole job is to get out of the way of two people talking."
+        "title": "sharing = caring",
+        "body": "We share what we know, what we discover, and what might help someone else. We believe that when we share freely, we make things a little easier, a little richer, and a lot more connected."
       },
       {
-        "title": "No catch",
-        "body": "Free means free. No premium tier, no ads, no \"unlock more mentors.\" Donations keep the servers on, and we publish where every cent goes."
+        "title": "people > titles",
+        "body": "We want to see the person before the title. What someone has lived, felt, discovered or cares about can be just as meaningful as what they do for a living. We care about the person, not the label."
       },
       {
-        "title": "Pass it on",
-        "body": "Knowledge doesn't belong to anyone. This one turned out to be the whole architecture -- every learner is next season's mentor, which is the only way a free garden keeps growing."
+        "title": "mentor ≡ mentee",
+        "body": "We don't believe learning only goes one way. We can all have something to share and something to learn, sometimes in the very same conversation. There is no one above or below anyone else."
       }
     ]
   },
@@ -96,5 +117,8 @@
   "loop": {
     "heading": "Pass it on: the part that makes the garden grow.",
     "lead": "Meenty isn't a marketplace with mentors on one side and learners on the other. It's a cycle you join. You arrive with a goal, and you leave it as someone worth learning from -- one sprout ahead of whoever comes next."
-  }
+  },
+  "updatedAt": "2026-09-06T17:57:50.448Z",
+  "createdAt": "2026-09-06T17:57:50.448Z",
+  "globalType": "site-content"
 }
