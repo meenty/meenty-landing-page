@@ -30,7 +30,7 @@ export function render() {
               <div class="msg me">it's literally one paragraph</div>
               <div class="msg">Those are my favorite. Video call on Thursday? Bring the paragraph.</div>
               <div class="ty-bubble">
-                ${leaf('var(--fire)', 'var(--fire)')}
+                ${leaf('var(--accent)', 'var(--accent)')}
                 you sent Felipe a ty
               </div>
             </div>

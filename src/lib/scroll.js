@@ -1,4 +1,4 @@
-import { track } from '@plausible-analytics/tracker'
+import { track } from './analytics.js'
 
 const THRESHOLDS = [25, 50, 75, 100]
 

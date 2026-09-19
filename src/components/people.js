@@ -9,7 +9,7 @@ function renderProfile(p) {
         <div class="big-card grad" aria-label="Example graduate volunteer profile">
           <span class="badge">${p.badge || ''}</span>
           <div class="big-top">
-            <div class="big-avatar" style="background: var(--water);" aria-hidden="true">${initialsAvatar(p.name, 'var(--sun)')}</div>
+            <div class="big-avatar" style="background: var(--leaf);" aria-hidden="true">${initialsAvatar(p.name, 'var(--sun)')}</div>
             <div>
               <div class="big-name">${p.name || ''}</div>
               <div class="big-meta">${p.meta || ''}</div>
@@ -28,8 +28,8 @@ function renderProfile(p) {
   const quote = p.quote
     ? `
           <div class="big-quote">
-            <span class="ty-label" style="font-family: 'Figtree', sans-serif; font-style: normal; font-weight: 700; font-size: 0.8rem; color: var(--fire);">
-              ${leaf('var(--fire)', null)}
+            <span class="ty-label" style="font-family: 'Figtree', sans-serif; font-style: normal; font-weight: 700; font-size: 0.8rem; color: var(--accent);">
+              ${leaf('var(--accent)', null)}
               ${p.quoteFrom || ''}
             </span>
             <p style="margin-top: 8px;">"${p.quote}"</p>

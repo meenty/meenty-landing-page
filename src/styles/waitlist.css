@@ -22,21 +22,21 @@
 .email-row input::placeholder { color: var(--earth); }
 .email-row input:focus-visible { outline: none; }
 .email-row:focus-within {
-  box-shadow: 0 0 0 3px var(--water), 0 10px 30px rgba(20, 51, 42, 0.08);
+  box-shadow: 0 0 0 3px var(--divider), 0 10px 30px rgba(20, 51, 42, 0.08);
 }
 .email-row button {
   border: none;
   border-radius: 999px;
   padding: 11px 24px;
-  background: var(--fire);
-  color: var(--earth);
+  background: var(--cta-bg);
+  color: var(--cta-fg);
   cursor: pointer;
   font-family: 'Figtree', sans-serif;
   font-weight: 700;
   font-size: 0.95rem;
   transition: background 0.2s ease;
 }
-.email-row button:hover { background: var(--sun); }
+.email-row button:hover { background: var(--cta-hover); }
 .role-toggle { display: flex; gap: 10px; margin-top: 14px; }
 .role-pill {
   font-family: 'Figtree', sans-serif;
@@ -50,9 +50,9 @@
   color: var(--earth);
   transition: background 0.15s ease;
 }
-.role-pill:hover { background: var(--water); }
-.role-pill[aria-pressed="true"] { background: var(--fire); color: var(--earth); }
-.role-pill[aria-pressed="true"]:hover { background: var(--sun); }
+.role-pill:hover { background: var(--divider); }
+.role-pill[aria-pressed="true"] { background: var(--cta-bg); color: var(--cta-fg); }
+.role-pill[aria-pressed="true"]:hover { background: var(--cta-hover); }
 .waitlist-msg {
   margin-top: 12px;
   font-size: 0.92rem;
@@ -60,7 +60,7 @@
   color: var(--earth);
   min-height: 1.5em;
 }
-.waitlist-msg.ok { color: var(--fire); }
+.waitlist-msg.ok { color: var(--accent); }
 .most-both {
   margin-top: 10px;
   font-family: 'Caveat', cursive;

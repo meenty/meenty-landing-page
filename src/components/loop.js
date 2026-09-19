@@ -27,16 +27,16 @@ export function render() {
             <text x="283" y="175" text-anchor="middle" font-size="13">conversations</text>
           </g>
           <g>
-            <rect x="122" y="270" width="96" height="34" rx="17" style="fill:var(--water);stroke:var(--fire)" stroke-width="2"/>
-            <text x="178" y="292" text-anchor="middle" font-size="14" style="fill:var(--fire)">a ty</text>
-            <path d="M146 293 C 140 289, 140 282, 146 277 C 152 282, 152 289, 146 293 Z" style="fill:var(--fire)"/>
+            <rect x="122" y="270" width="96" height="34" rx="17" style="fill:var(--surface);stroke:var(--accent)" stroke-width="2"/>
+            <text x="178" y="292" text-anchor="middle" font-size="14" style="fill:var(--accent)">a ty</text>
+            <path d="M146 293 C 140 289, 140 282, 146 277 C 152 282, 152 289, 146 293 Z" style="fill:var(--accent)"/>
           </g>
           <g>
-            <rect x="4" y="153" width="132" height="34" rx="17" style="fill:var(--water);stroke:var(--earth)" stroke-width="2"/>
+            <rect x="4" y="153" width="132" height="34" rx="17" style="fill:var(--surface);stroke:var(--earth)" stroke-width="2"/>
             <text x="70" y="175" text-anchor="middle" font-size="13">the other side</text>
           </g>
           <path d="M170 148 C 158 152, 152 162, 152 170 C 152 182, 160 190, 170 190 C 180 190, 188 182, 188 170 C 188 158, 178 146, 170 132 C 166 138, 162 143, 170 148 Z" fill="none"/>
-          <path d="M170 196 C 160 190, 159 178, 170 166 C 181 178, 180 190, 170 196 Z" style="fill:var(--water);stroke:var(--earth)" stroke-width="2.4"/>
+          <path d="M170 196 C 160 190, 159 178, 170 166 C 181 178, 180 190, 170 196 Z" style="fill:var(--leaf);stroke:var(--earth)" stroke-width="2.4"/>
           <text x="170" y="222" text-anchor="middle" font-size="12" style="fill:var(--earth)" font-style="italic" font-family="Fraunces, serif">and again</text>
         </svg>
 
@@ -45,7 +45,7 @@ export function render() {
             <div class="screen">
               <div class="statusbar"><span>9:41</span><span>·</span></div>
               <div class="done-screen">
-                <svg class="done-leaf" viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M24 44 C 9 35, 8 17, 24 4 C 40 17, 39 35, 24 44 Z" style="fill:var(--water);stroke:var(--earth)" stroke-width="3"/><path d="M24 39 C 24 30, 24 20, 24 11" style="stroke:var(--earth)" stroke-width="2.5" stroke-linecap="round"/></svg>
+                <svg class="done-leaf" viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M24 44 C 9 35, 8 17, 24 4 C 40 17, 39 35, 24 44 Z" style="fill:var(--leaf);stroke:var(--earth)" stroke-width="3"/><path d="M24 39 C 24 30, 24 20, 24 11" style="stroke:var(--earth)" stroke-width="2.5" stroke-linecap="round"/></svg>
                 <div class="done-title">You closed the loop.</div>
                 <div class="done-meta">"get better at writing" · 6 chats with Felipe · 1 ty sent</div>
                 <div class="done-buttons">

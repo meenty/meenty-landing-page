@@ -1,10 +1,10 @@
-.about { background: var(--water); padding: 110px 0; }
+.about { background: var(--surface); padding: 110px 0; }
 .about-head { text-align: center; }
 .about-label {
   font-family: 'Caveat', cursive;
   font-weight: 700;
   font-size: 1.5rem;
-  color: var(--fire);
+  color: var(--accent);
   transform: rotate(-1.5deg);
   display: inline-block;
 }

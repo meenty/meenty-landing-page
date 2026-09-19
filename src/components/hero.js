@@ -64,7 +64,7 @@ export function render() {
                   </div>
                 </div>
                 <div class="fat-leaves">
-                  ${leaf()}${leaf()}${leaf()}${leaf()}${leaf('var(--water)')}
+                  ${leaf()}${leaf()}${leaf()}${leaf()}${leaf('var(--leaf)')}
                   <span>21 tys</span>
                 </div>
                 <div class="snippet">"Forty years of teaching. I still get excited when someone gets it."</div>

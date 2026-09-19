@@ -1,6 +1,6 @@
 import './close.css'
 import '../styles/waitlist.css'
-import { track } from '@plausible-analytics/tracker'
+import { track } from '../lib/analytics.js'
 import { leaf } from '../lib/leaf.js'
 import { waitlistHTML, setupWaitlist } from '../lib/waitlist.js'
 import content from '../content.json'

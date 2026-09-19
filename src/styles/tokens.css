@@ -1,7 +1,14 @@
 :root {
   --air: #FFFDE3;
-  --water: #AFE1E8;
   --sun: #FDE386;
-  --fire: #FFB054;
   --earth: #694B34;
+
+  --surface: #AFE1E8;
+  --divider: #AFE1E8;
+  --leaf: #AFE1E8;
+  --cta-bg: #FFB054;
+  --cta-fg: #694B34;
+  --cta-hover: #FDE386;
+  --accent: #FFB054;
+  --focus: #FFB054;
 }
