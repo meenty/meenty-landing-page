@@ -2,7 +2,7 @@
 .how h2 { font-size: clamp(1.9rem, 4.2vw, 2.7rem); }
 .how .hand-note {
   font-size: 1.35rem;
-  color: var(--stone);
+  color: var(--earth);
   display: inline-block;
   transform: rotate(-1.5deg);
   margin-left: 10px;
@@ -13,17 +13,17 @@
   grid-template-columns: 70px 1fr;
   gap: 22px;
   padding: 38px 0;
-  border-bottom: 1px solid var(--hairline);
+  border-bottom: 1px solid var(--water);
   align-items: start;
 }
-.how-step:first-child { border-top: 1px solid var(--hairline); }
+.how-step:first-child { border-top: 1px solid var(--water); }
 @media (max-width: 600px) { .how-step { grid-template-columns: 54px 1fr; gap: 16px; } }
 .how-step .num {
   width: 52px;
   height: 52px;
   border-radius: 50%;
-  background: var(--mist);
-  border: 2px solid var(--ink);
+  background: var(--water);
+  border: 2px solid var(--earth);
   font-family: 'Fraunces', serif;
   font-weight: 500;
   font-size: 1.4rem;
@@ -32,7 +32,7 @@
   justify-content: center;
 }
 .how-step:nth-child(2) .num { background: var(--sun); }
-.how-step:nth-child(3) .num { background: var(--mint); }
-.how-step:nth-child(4) .num { background: #FDEEE7; border-color: var(--coral); color: var(--coral); }
+.how-step:nth-child(3) .num { background: var(--water); }
+.how-step:nth-child(4) .num { background: var(--water); border-color: var(--fire); color: var(--fire); }
 .how-step h3 { font-size: 1.4rem; font-weight: 500; }
-.how-step p { margin-top: 8px; color: var(--stone); font-weight: 500; max-width: 54ch; }
+.how-step p { margin-top: 8px; color: var(--earth); font-weight: 500; max-width: 54ch; }

@@ -1,25 +1,25 @@
 .close {
-  background: var(--mint);
+  background: var(--water);
   padding: 110px 0 100px;
   text-align: center;
   position: relative;
   overflow: hidden;
 }
 .close h2 { font-size: clamp(2.1rem, 5.5vw, 3.3rem); max-width: 18ch; margin: 0 auto; }
-.close .sub { margin: 22px auto 0; max-width: 46ch; font-weight: 500; color: #23473A; }
+.close .sub { margin: 22px auto 0; max-width: 46ch; font-weight: 500; color: var(--earth); }
 .close .waitlist { margin: 42px auto 0; }
-.close .email-row { border-color: var(--ink); box-shadow: 0 10px 30px rgba(20, 51, 42, 0.12); }
-.close .waitlist-msg { color: #23473A; }
-.close .waitlist-msg.ok { color: var(--ink); }
-.close .store-note { margin-top: 32px; font-weight: 600; font-size: 0.88rem; color: #2c5748; }
+.close .email-row { border-color: var(--earth); box-shadow: 0 10px 30px rgba(20, 51, 42, 0.12); }
+.close .waitlist-msg { color: var(--earth); }
+.close .waitlist-msg.ok { color: var(--earth); }
+.close .store-note { margin-top: 32px; font-weight: 600; font-size: 0.88rem; color: var(--earth); }
 .share-btn {
   margin-top: 30px;
   display: inline-flex;
   align-items: center;
   gap: 9px;
-  border: 2px solid var(--ink);
+  border: 2px solid var(--earth);
   background: transparent;
-  color: var(--ink);
+  color: var(--earth);
   font-family: 'Figtree', sans-serif;
   font-weight: 700;
   font-size: 0.95rem;
@@ -28,9 +28,9 @@
   cursor: pointer;
   transition: background 0.2s ease, color 0.2s ease;
 }
-.share-btn:hover { background: var(--ink); color: var(--cream); }
+.share-btn:hover { background: var(--fire); color: var(--earth); }
 .share-btn svg { width: 18px; height: 18px; }
-.share-msg { display: block; margin-top: 12px; font-size: 0.9rem; font-weight: 600; color: #23473A; }
+.share-msg { display: block; margin-top: 12px; font-size: 0.9rem; font-weight: 600; color: var(--earth); }
 .close .hand-close {
   margin-top: 8px;
   font-family: 'Caveat', cursive;
