@@ -1,7 +1,7 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 html {
-  background: #FBF7EF !important;
+  background: var(--air) !important;
   color-scheme: only light;
   scroll-behavior: smooth;
 }
@@ -10,7 +10,7 @@ body::before {
   content: '';
   position: fixed;
   inset: 0;
-  background: #FBF7EF;
+  background: var(--air);
   z-index: -1;
   pointer-events: none;
 }
@@ -22,8 +22,8 @@ body::before {
 
 body {
   min-height: 100vh;
-  background: #FBF7EF !important;
-  color: var(--ink);
+  background: var(--air) !important;
+  color: var(--earth);
   font-family: 'Figtree', sans-serif;
   font-size: 17px;
   line-height: 1.7;
@@ -40,7 +40,7 @@ h1, h2, h3 {
 a { color: inherit; }
 
 a:focus-visible, button:focus-visible, input:focus-visible {
-  outline: 2.5px solid var(--mint-deep);
+  outline: 2.5px solid var(--fire);
   outline-offset: 3px;
 }
 
@@ -48,12 +48,12 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 .wrap { max-width: 1000px; margin: 0 auto; padding: 0 26px; }
 .narrow { max-width: 640px; margin: 0 auto; padding: 0 26px; }
 .hand { font-family: 'Caveat', cursive; font-weight: 700; }
-.ty-mark { color: var(--mint-deep); }
-.lead { color: var(--stone); font-weight: 500; }
+.ty-mark { color: var(--earth); }
+.lead { color: var(--earth); font-weight: 500; }
 .cards-caption {
   font-family: 'Caveat', cursive;
   font-weight: 700;
   font-size: 1.2rem;
-  color: var(--stone);
+  color: var(--earth);
   transform: rotate(-1deg);
 }

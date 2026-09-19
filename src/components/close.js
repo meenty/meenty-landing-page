@@ -8,10 +8,10 @@ import content from '../content.json'
 export function render() {
   return `
   <section class="close" id="join">
-    <div class="close-leaf cl1" aria-hidden="true">${leaf('#FBF7EF')}</div>
-    <div class="close-leaf cl2" aria-hidden="true">${leaf('#FFD84D')}</div>
-    <div class="close-leaf cl3" aria-hidden="true">${leaf('#FBF7EF')}</div>
-    <div class="close-leaf cl4" aria-hidden="true">${leaf('#FFD84D')}</div>
+    <div class="close-leaf cl1" aria-hidden="true">${leaf('var(--air)')}</div>
+    <div class="close-leaf cl2" aria-hidden="true">${leaf('var(--sun)')}</div>
+    <div class="close-leaf cl3" aria-hidden="true">${leaf('var(--air)')}</div>
+    <div class="close-leaf cl4" aria-hidden="true">${leaf('var(--sun)')}</div>
     <div class="wrap">
       <h2>${content?.close?.heading || ''}</h2>
       <p class="sub">${content?.close?.sub || ''}</p>

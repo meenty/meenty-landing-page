@@ -27,7 +27,7 @@ export function render() {
       <div class="phone-col">
         <div class="phone-note">
           the whole app, honestly
-          <svg viewBox="0 0 60 44" fill="none" aria-hidden="true"><path d="M50 4 C 40 20, 30 28, 14 34 M14 34 l10 -4 M14 34 l6 8" stroke="#14332A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg viewBox="0 0 60 44" fill="none" aria-hidden="true"><path d="M50 4 C 40 20, 30 28, 14 34 M14 34 l10 -4 M14 34 l6 8" style="stroke:var(--earth)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </div>
         <div class="phone" role="img" aria-label="Menty app screen suggesting writing mentors">
           <div class="screen">
@@ -64,7 +64,7 @@ export function render() {
                   </div>
                 </div>
                 <div class="fat-leaves">
-                  ${leaf()}${leaf()}${leaf()}${leaf()}${leaf('#E9F5EE')}
+                  ${leaf()}${leaf()}${leaf()}${leaf()}${leaf('var(--water)')}
                   <span>21 tys</span>
                 </div>
                 <div class="snippet">"Forty years of teaching. I still get excited when someone gets it."</div>
@@ -98,7 +98,7 @@ export function render() {
       <div class="narrow">
         <p>${content?.hero?.manifesto || ''}</p>
         <div class="leafline" aria-hidden="true">
-          ${leaf()}${leaf('#FFD84D')}${leaf()}
+          ${leaf()}${leaf('var(--sun)')}${leaf()}
         </div>
       </div>
     </div>

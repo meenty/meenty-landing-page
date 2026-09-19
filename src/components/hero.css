@@ -7,7 +7,7 @@
   margin-top: 24px;
   max-width: 42ch;
   font-size: 1.12rem;
-  color: var(--stone);
+  color: var(--earth);
   font-weight: 500;
 }
 .free-sticker {
@@ -17,7 +17,7 @@
   font-weight: 700;
   font-size: 1.25rem;
   background: var(--sun);
-  border: 2px solid var(--ink);
+  border: 2px solid var(--earth);
   border-radius: 999px;
   padding: 5px 18px;
   transform: rotate(-2deg);
@@ -28,19 +28,19 @@
 .app-greeting { font-family: 'Fraunces', serif; font-weight: 500; font-size: 1.22rem; }
 .searchbox {
   margin-top: 11px;
-  background: #fff;
-  border: 1.5px solid var(--hairline);
+  background: var(--air);
+  border: 1.5px solid var(--water);
   border-radius: 999px;
   padding: 9px 15px;
-  color: var(--stone);
+  color: var(--earth);
   font-weight: 500;
   box-shadow: 0 1px 3px rgba(20, 51, 42, 0.06);
 }
 .app-body { padding: 4px 13px 16px; }
-.app-section-title { font-weight: 700; font-size: 10.5px; color: var(--stone); margin: 8px 6px 9px; }
+.app-section-title { font-weight: 700; font-size: 10.5px; color: var(--earth); margin: 8px 6px 9px; }
 .app-card {
-  background: #fff;
-  border: 1.5px solid var(--hairline);
+  background: var(--air);
+  border: 1.5px solid var(--water);
   border-radius: 19px;
   padding: 13px 14px;
   margin-bottom: 10px;
@@ -53,20 +53,20 @@
   border-radius: 50%;
   flex-shrink: 0;
   background: var(--sun);
-  border: 1.5px solid var(--ink);
+  border: 1.5px solid var(--earth);
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
 }
-.doodle-avatar.alt { background: var(--mint); }
+.doodle-avatar.alt { background: var(--water); }
 .doodle-avatar svg { width: 86%; height: 86%; }
 .app-card .name { font-weight: 700; font-size: 13px; }
-.app-card .meta { font-size: 11px; color: var(--stone); font-weight: 500; }
+.app-card .meta { font-size: 11px; color: var(--earth); font-weight: 500; }
 .fat-leaves { display: flex; gap: 3px; margin-top: 9px; align-items: center; }
 .fat-leaves svg { width: 15px; height: 15px; }
-.fat-leaves span { font-size: 10.5px; font-weight: 600; color: var(--stone); margin-left: 6px; }
-.app-card .snippet { margin-top: 7px; font-size: 11.5px; font-weight: 500; color: var(--stone); }
+.fat-leaves span { font-size: 10.5px; font-weight: 600; color: var(--earth); margin-left: 6px; }
+.app-card .snippet { margin-top: 7px; font-size: 11.5px; font-weight: 500; color: var(--earth); }
 .send-ty {
   display: inline-flex;
   align-items: center;
@@ -74,9 +74,9 @@
   margin-top: 9px;
   font-size: 10.5px;
   font-weight: 700;
-  color: var(--ink);
-  background: var(--mist);
-  border: 1.5px solid var(--ink);
+  color: var(--earth);
+  background: var(--water);
+  border: 1.5px solid var(--earth);
   border-radius: 999px;
   padding: 4px 11px;
 }
@@ -85,20 +85,20 @@
   display: flex;
   justify-content: space-around;
   padding: 12px 8px 15px;
-  background: #fff;
-  border-top: 1.5px solid var(--hairline);
+  background: var(--air);
+  border-top: 1.5px solid var(--water);
   font-size: 9.5px;
   font-weight: 700;
-  color: var(--stone);
+  color: var(--earth);
 }
 .tabbar div { display: flex; flex-direction: column; align-items: center; gap: 3px; opacity: 0.55; }
-.tabbar div.active { opacity: 1; color: var(--ink); }
+.tabbar div.active { opacity: 1; color: var(--earth); }
 .tabbar svg { width: 17px; height: 17px; }
 
 /* ---------- Manifesto ---------- */
 .manifesto {
   margin-top: 90px;
-  background: var(--mist);
+  background: var(--water);
   padding: 100px 0;
   text-align: center;
 }
