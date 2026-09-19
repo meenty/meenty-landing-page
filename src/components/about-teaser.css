@@ -1,11 +1,11 @@
-.about-teaser { background: var(--water); padding: 110px 0; }
+.about-teaser { background: var(--surface); padding: 110px 0; }
 .about-teaser-inner { text-align: center; }
 .about-teaser-label {
   display: inline-block;
   font-family: 'Caveat', cursive;
   font-weight: 700;
   font-size: 1.5rem;
-  color: var(--fire);
+  color: var(--accent);
   transform: rotate(-1.5deg);
 }
 .about-teaser h2 { font-size: clamp(2rem, 4.6vw, 2.9rem); margin-top: 10px; }
@@ -14,10 +14,10 @@
   display: inline-block;
   margin-top: 32px;
   padding: 14px 30px;
-  background: var(--fire);
-  color: var(--earth);
+  background: var(--cta-bg);
+  color: var(--cta-fg);
   border-radius: 999px;
   font-weight: 600;
   text-decoration: none;
 }
-.about-teaser-link:hover { background: var(--sun); }
+.about-teaser-link:hover { background: var(--cta-hover); }

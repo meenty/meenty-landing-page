@@ -1,4 +1,4 @@
-import { track } from '@plausible-analytics/tracker'
+import { track } from './analytics.js'
 import { postToCms } from './api.js'
 
 export function waitlistHTML() {

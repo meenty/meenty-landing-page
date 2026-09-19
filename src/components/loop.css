@@ -1,4 +1,4 @@
-.loop { background: var(--water); padding: 110px 0; }
+.loop { background: var(--surface); padding: 110px 0; }
 .loop-head { text-align: center; }
 .loop h2 { font-size: clamp(2rem, 4.6vw, 2.9rem); max-width: 20ch; margin: 0 auto; }
 .loop .lead { margin: 18px auto 0; max-width: 52ch; }
@@ -25,7 +25,7 @@
   font-weight: 700;
   font-size: 12px;
 }
-.done-btn.primary { background: var(--fire); color: var(--earth); border: 2px solid var(--earth); }
+.done-btn.primary { background: var(--cta-bg); color: var(--cta-fg); border: 2px solid var(--earth); }
 .done-btn.ghost { background: transparent; color: var(--earth); border: 2px solid var(--earth); }
 .done-note {
   margin-top: 14px;

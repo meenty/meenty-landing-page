@@ -1,12 +1,5 @@
-import './styles/tokens.css'
+import './styles/tokens-v2.css'
 import './styles/base.css'
-
-import { init } from './lib/analytics.js'
-
-init({
-  domain: 'meenty.app',
-  endpoint: 'https://plausible.mansus.org/api/event'
-})
 
 import { render as nav } from './components/nav.js'
 import { render as hero, mount as mountHero } from './components/hero.js'

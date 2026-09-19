@@ -36,7 +36,7 @@ export function avatarAna() {
   </svg>`
 }
 
-export function initialsAvatar(name, fill = 'var(--water)') {
+export function initialsAvatar(name, fill = 'var(--surface)') {
   const initials = (name || '')
     .split(/\s+/)
     .map((w) => w[0])

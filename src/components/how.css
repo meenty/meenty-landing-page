@@ -13,16 +13,16 @@
   grid-template-columns: 70px 1fr;
   gap: 22px;
   padding: 38px 0;
-  border-bottom: 1px solid var(--water);
+  border-bottom: 1px solid var(--divider);
   align-items: start;
 }
-.how-step:first-child { border-top: 1px solid var(--water); }
+.how-step:first-child { border-top: 1px solid var(--divider); }
 @media (max-width: 600px) { .how-step { grid-template-columns: 54px 1fr; gap: 16px; } }
 .how-step .num {
   width: 52px;
   height: 52px;
   border-radius: 50%;
-  background: var(--water);
+  background: var(--surface);
   border: 2px solid var(--earth);
   font-family: 'Fraunces', serif;
   font-weight: 500;
@@ -32,7 +32,7 @@
   justify-content: center;
 }
 .how-step:nth-child(2) .num { background: var(--sun); }
-.how-step:nth-child(3) .num { background: var(--water); }
-.how-step:nth-child(4) .num { background: var(--water); border-color: var(--fire); color: var(--fire); }
+.how-step:nth-child(3) .num { background: var(--surface); }
+.how-step:nth-child(4) .num { background: var(--surface); border-color: var(--accent); color: var(--accent); }
 .how-step h3 { font-size: 1.4rem; font-weight: 500; }
 .how-step p { margin-top: 8px; color: var(--earth); font-weight: 500; max-width: 54ch; }

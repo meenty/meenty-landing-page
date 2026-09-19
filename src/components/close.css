@@ -1,5 +1,5 @@
 .close {
-  background: var(--water);
+  background: var(--surface);
   padding: 110px 0 100px;
   text-align: center;
   position: relative;
@@ -28,7 +28,7 @@
   cursor: pointer;
   transition: background 0.2s ease, color 0.2s ease;
 }
-.share-btn:hover { background: var(--fire); color: var(--earth); }
+.share-btn:hover { background: var(--cta-bg); color: var(--cta-fg); }
 .share-btn svg { width: 18px; height: 18px; }
 .share-msg { display: block; margin-top: 12px; font-size: 0.9rem; font-weight: 600; color: var(--earth); }
 .close .hand-close {

@@ -25,7 +25,7 @@ const items = [
 export function render() {
   const itemsHTML = items
     .map((v, i) => {
-      const fill = i % 2 === 1 ? 'var(--sun)' : 'var(--water)'
+      const fill = i % 2 === 1 ? 'var(--sun)' : 'var(--leaf)'
       return `
         <div class="value">
           <strong>${leaf(fill)}${v.title}</strong>

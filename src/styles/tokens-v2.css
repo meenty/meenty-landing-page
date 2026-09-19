@@ -1,0 +1,14 @@
+:root {
+  --air: #F2E9D2;
+  --sun: #E1AC32;
+  --earth: #463121;
+
+  --surface: #F2E9D2;
+  --divider: #CDB646;
+  --leaf: #556D0C;
+  --cta-bg: #556D0C;
+  --cta-fg: #FFFFFF;
+  --cta-hover: #42540A;
+  --accent: #556D0C;
+  --focus: #556D0C;
+}

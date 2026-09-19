@@ -17,7 +17,7 @@
   box-shadow: 0 10px 30px rgba(20, 51, 42, 0.08);
 }
 .message-card:focus-within {
-  box-shadow: 0 0 0 3px var(--water), 0 10px 30px rgba(20, 51, 42, 0.08);
+  box-shadow: 0 0 0 3px var(--divider), 0 10px 30px rgba(20, 51, 42, 0.08);
 }
 .message-field {
   width: 100%;
@@ -40,15 +40,15 @@
   border-radius: 14px;
   padding: 12px 24px;
   margin-top: 6px;
-  background: var(--fire);
-  color: var(--earth);
+  background: var(--cta-bg);
+  color: var(--cta-fg);
   cursor: pointer;
   font-family: 'Figtree', sans-serif;
   font-weight: 700;
   font-size: 0.95rem;
   transition: background 0.2s ease;
 }
-.send-btn:hover { background: var(--sun); }
+.send-btn:hover { background: var(--cta-hover); }
 .message-msg {
   margin-top: 14px;
   text-align: center;
@@ -57,4 +57,4 @@
   color: var(--earth);
   min-height: 1.5em;
 }
-.message-msg.ok { color: var(--fire); }
+.message-msg.ok { color: var(--accent); }

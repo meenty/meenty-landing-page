@@ -10,7 +10,7 @@
   align-items: center;
   gap: 10px;
   padding: 10px 16px 12px;
-  border-bottom: 1.5px solid var(--water);
+  border-bottom: 1.5px solid var(--divider);
   background: var(--air);
 }
 .chat-header .mini-avatar {
@@ -28,11 +28,11 @@
 .chat-header .mini-avatar svg { width: 86%; height: 86%; }
 .chat-header .who { flex: 1; }
 .chat-header .who .name { font-weight: 700; font-size: 12.5px; }
-.chat-header .who .status { font-size: 10px; color: var(--fire); font-weight: 600; }
+.chat-header .who .status { font-size: 10px; color: var(--accent); font-weight: 600; }
 .chat-header .cam { width: 20px; height: 20px; color: var(--earth); }
 .match-banner {
   margin: 12px 13px 4px;
-  background: var(--water);
+  background: var(--surface);
   border: 1.5px solid var(--earth);
   border-radius: 14px;
   padding: 9px 13px;
@@ -40,7 +40,7 @@
   font-weight: 700;
   font-size: 11px;
 }
-.match-banner .hand { font-size: 1.05rem; display: block; margin-top: 1px; color: var(--fire); }
+.match-banner .hand { font-size: 1.05rem; display: block; margin-top: 1px; color: var(--accent); }
 .chat-body { padding: 8px 13px 14px; display: flex; flex-direction: column; gap: 7px; }
 .msg {
   max-width: 78%;
@@ -50,13 +50,13 @@
   font-weight: 500;
   line-height: 1.45;
   background: var(--air);
-  border: 1.5px solid var(--water);
+  border: 1.5px solid var(--divider);
   border-bottom-left-radius: 5px;
   align-self: flex-start;
 }
 .msg.me {
-  background: var(--water);
-  border-color: var(--water);
+  background: var(--surface);
+  border-color: var(--divider);
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 5px;
   align-self: flex-end;
@@ -64,13 +64,13 @@
 .ty-bubble {
   align-self: center;
   margin-top: 4px;
-  background: var(--water);
-  border: 1.5px solid var(--fire);
+  background: var(--surface);
+  border: 1.5px solid var(--accent);
   border-radius: 999px;
   padding: 6px 14px;
   font-size: 10.5px;
   font-weight: 700;
-  color: var(--fire);
+  color: var(--accent);
   display: flex;
   align-items: center;
   gap: 6px;
@@ -79,7 +79,7 @@
 .chat-input {
   margin: 0 13px 14px;
   background: var(--air);
-  border: 1.5px solid var(--water);
+  border: 1.5px solid var(--divider);
   border-radius: 999px;
   padding: 8px 14px;
   color: var(--earth);

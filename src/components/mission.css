@@ -2,7 +2,7 @@
 .mv-grid { display: grid; grid-template-columns: 1fr 1fr; }
 @media (max-width: 820px) { .mv-grid { grid-template-columns: 1fr; gap: 60px; } }
 .mv-block { padding-right: 48px; }
-.mv-block.vision { padding-left: 48px; padding-right: 0; border-left: 1px solid var(--water); }
+.mv-block.vision { padding-left: 48px; padding-right: 0; border-left: 1px solid var(--divider); }
 @media (max-width: 820px) {
   .mv-block, .mv-block.vision { padding: 0; border-left: none; }
 }
@@ -11,7 +11,7 @@
   font-family: 'Caveat', cursive;
   font-weight: 700;
   font-size: 1.4rem;
-  color: var(--fire);
+  color: var(--accent);
   transform: rotate(-1.5deg);
   margin-bottom: 14px;
 }

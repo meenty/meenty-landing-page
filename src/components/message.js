@@ -1,5 +1,5 @@
 import './message.css'
-import { track } from '@plausible-analytics/tracker'
+import { track } from '../lib/analytics.js'
 import { postToCms } from '../lib/api.js'
 import content from '../content.json'
 

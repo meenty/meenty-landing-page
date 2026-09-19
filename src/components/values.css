@@ -15,10 +15,10 @@
   grid-template-columns: 200px 1fr;
   gap: 24px;
   padding: 30px 0;
-  border-bottom: 1px solid var(--water);
+  border-bottom: 1px solid var(--divider);
   align-items: baseline;
 }
-.value:first-child { border-top: 1px solid var(--water); }
+.value:first-child { border-top: 1px solid var(--divider); }
 @media (max-width: 640px) { .value { grid-template-columns: 1fr; gap: 6px; } }
 .value strong {
   font-family: 'Fraunces', serif;
